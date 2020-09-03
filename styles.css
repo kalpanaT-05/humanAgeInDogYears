@@ -1,0 +1,135 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background-color:#f2fadb;
+  font-family: 'Helvetica', sans-serif;
+  font-size:16px;
+  color:#4a5;
+  line-height:1.5;
+  letter-spacing:1.5px;
+}
+
+.main{
+  margin:5rem 0;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.main h2{
+  font-size:3rem;
+  border-bottom:0.5px solid #eed;
+  letter-spacing:2.5px;
+  word-spacing:1.5px;
+}
+
+.form{
+  border-radius:10px;
+  margin-top:5rem;
+  border:1px solid #ddd;
+  box-shadow:0px 1px 4px 1px #4a8;
+  transition:box-shadow 0.5s ease-in-out;
+}
+
+.form:hover{
+  box-shadow:0px 0px 6px 6px #4a8;
+}
+
+.form_tag{
+  background:#fff;
+  padding:2em;
+}
+
+#age{
+  padding:1rem 2rem;
+  border:1px solid #4a5;
+  border-radius:12px;
+  width:100%;
+  outline:none;
+}
+
+#age::placeholder, #dog_age::placeholder{
+  color:#ccc;
+  font-size:16px;
+  letter-spacing:1.5px;
+}
+
+#calc_btn{
+  background-color:#4a5;
+  border:1px solid #4a5;
+  color:#fff;
+  padding:1rem 2rem;
+  border-radius:12px;
+  margin-top:2rem;
+  width:100%;
+  font-size:16px;
+  letter-spacing:1.5px;
+  outline:none;
+}
+
+#calc_btn:hover{
+  background-color:#fff;
+  border:1px solid #4a5;
+  color:#333;
+}
+
+.result_div{
+  margin-top:2rem;
+}
+
+#dog_age{
+  padding:1rem 2rem;
+  border:1px solid #4a5;
+  border-radius:12px;
+  outline:none;
+}
+
+footer{
+  /* margin-top:3rem; */
+  font-size:14px;
+  color:#4a8;
+}
+
+.paragraph{
+  text-align:center;
+}
+
+svg{
+  fill:crimson;
+}
+
+.paragraph a{
+  text-decoration:none;
+  color:#4a8;
+}
+
+.paragraph a:hover{
+  color:#4a5;
+  text-decoration:underline;
+}
+
+@media screen and (max-width:600px){
+  .main h2{
+    font-size:20px;
+    text-align:center;
+  }
+}
+
+@media screen and (max-width:480px){
+  .main h2{
+    font-size:20px;
+    text-align:center;
+  }
+}
+
+@media screen and (max-width:900px){
+  .main h2{
+    font-size:34px;
+    text-align:center;
+  }
+}

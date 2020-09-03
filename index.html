@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Human's Age in Dog Years</title>
+  </head>
+  <body>
+    <div class="main">
+      <h2> Calculate Your Age In Dog Years </h2>
+      <div class="form">
+        <form method="post" class="form_tag">
+          <input type="number" name="age" id="age" placeholder="Enter your age" size="30">
+
+          <div class="calc_div">
+            <input type="button" value="Calculate" id="calc_btn" onclick="years(this.form)">
+          </div>
+
+          <div class="result_div">
+            <input type="text" name="dog_age" id="dog_age" placeholder="Your age in Dog Years is" size="30" readonly>
+          </div> <!-- end of .result_div -->
+
+        </form>
+      </div> <!-- end of .form -->
+    </div> <!-- end of .main -->
+
+    <footer>
+      <div class="paragraph">
+        <p>Made with
+          <svg
+            width="1em"
+            height="1em"
+            viewBox="0 0 16 16"
+            class="bi bi-heart-fill"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+            />
+          </svg>
+          by <a href="https://github.com/kalpanaT-05" target="_blank"> kalpanaT-05 </a>
+        </p>
+      </div> <!-- end of .paragraph -->
+    </footer>
+
+    <script type="text/javascript">
+
+    function years(form){
+      form.dog_age.value = form.age.value * 7;
+    }
+
+    </script>
+  </body>
+</html>
